@@ -146,7 +146,7 @@ class ConfigurationsTest : MultiplatformExtensionTest() {
             }
         }
         with(project.evaluate()) {
-            assertContainsDependencies("jsApi", "test:compilation-dependency", "test:source-set-dependency")
+            assertContainsDependencies("jsCompilationApi", "test:compilation-dependency", "test:source-set-dependency")
             assertContainsDependencies("jsMainApi", "test:source-set-dependency")
             assertNotContainsDependencies("jsMainApi", "test:compilation-dependency")
         }
